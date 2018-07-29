@@ -3,8 +3,11 @@
 using namespace std;
 
 size_t factorial(size_t n){
-    if (n == 1) return 1;
-    else return n * factorial(n-1);
+    size_t i{n};
+    while(n > 1){
+        i *= (n--);
+    }
+    return i;
 }
 
 
